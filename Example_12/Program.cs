@@ -21,7 +21,7 @@ void NumberWithoutSecond(int a){
  num = num/10;
  num2 = num+num2;
 
- Console.WriteLine($"Вторая цифра в числе {num2}");
+ Console.WriteLine($"Число без второй цифры {num2}");
  }
 
 
