@@ -23,8 +23,6 @@ string Diaposon(int number)
         return "mistake";
 }
 
-
-
 Console.Write("Input Area: ");
 int Area = int.Parse(Console.ReadLine());
 Console.WriteLine(Diaposon(Area));
