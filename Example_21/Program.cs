@@ -5,13 +5,13 @@ string NewRandomeMassive()
 {
     int[] random;
     random = new int[7];
-    string Mass = string.Empty;
+    string mass = string.Empty;
     for (int i = 0; i < 7; i++)
     {
         random[i] = new Random().Next(0,2);
-        Mass = Mass + random[i];
+        mass = mass + random[i];
     }
-    return Mass;
+    return mass;
 }
 
 string Result = NewRandomeMassive();
