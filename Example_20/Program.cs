@@ -14,10 +14,9 @@ int GetProizved(int number)
     }
     if (number < 0)
     {
-        for (int i = 1; i >= number; i--)
-        {
-            multiplication = multiplication * i;
-        }
+       
+         multiplication = 0;
+        
     }
     return multiplication;
 }
