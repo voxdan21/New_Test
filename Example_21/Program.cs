@@ -16,3 +16,5 @@ string NewRandomeMassive()
 
 string Result = NewRandomeMassive();
 Console.WriteLine(Result);
+
+System.Console.WriteLine(Result);
