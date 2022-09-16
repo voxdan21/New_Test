@@ -11,7 +11,7 @@ for (int i = 0; i < array.Length; i++)
 }
 
 
-int [] GetReverseArray (int[] array)
+int [] GetReverseArray1 (int[] array)
 {
     int [] result = new int[array.Length];
     for (int i = 0; i < result.Length; i++)
@@ -21,6 +21,22 @@ int [] GetReverseArray (int[] array)
     return result;
 }
 
+
+int [] GetReverseArray2 (int[] array)
+{
+    int tempStorage = array[0];
+    for (int i = 0; i < array.Length / 2 ; i++)
+    {   
+        tempStorage = array[i];
+        array[i] = array[array.Length-1-i];
+        array[array.Length-1-i] = tempStorage;
+    }
+    return array;
+}
+
 int[] array = new int[] { 1, 4, 6, 3, 7, 9 , 8};
-int[] result = GetReverseArray(array);
+int[] result = GetReverseArray1(array);
 PrintArray(result);
+result = GetReverseArray2(array);
+PrintArray(result);
+Console.ReadKey();
